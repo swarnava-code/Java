@@ -10,6 +10,7 @@ public class Main {
         //myUtil.testScannerClass();
         //myUtil.testJOptionPaneClass();
         //myUtil.testMathClass();
+        myUtil.testRandomClass();
     }
 
 }

@@ -1,6 +1,7 @@
 package com.swarnava.java.util;
 
 import javax.swing.*;
+import java.util.Random;
 import java.util.Scanner;
 
 public class MyUtil {
@@ -65,6 +66,25 @@ public class MyUtil {
                 ", round=" + round +
                 ", floor=" + floor +
                 '}');
+    }
+
+    public void testRandomClass() {
+        Random random = new Random();
+        boolean randBooleanValue = random.nextBoolean();
+        int randomIntegerValue1 = random.nextInt();
+        int randomIntegerValue2 = random.nextInt(900,920); // 900-919
+        double randomDoubleValue = random.nextDouble();
+
+        String randPhoneNo="";
+        for (int i = 0; i <10; i++) {
+            randPhoneNo += random.nextInt(0, 10);
+        }
+
+        System.out.println("randBooleanValue: " + randBooleanValue);
+        System.out.println("randomIntegerValue1: " + randomIntegerValue1);
+        System.out.println("randomIntegerValue2 (900-919): " + randomIntegerValue2);
+        System.out.println("randomDoubleValue: " + randomDoubleValue);
+        System.out.println("random phone no.: " + randPhoneNo);
     }
 
 }
