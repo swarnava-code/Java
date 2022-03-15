@@ -72,11 +72,11 @@ public class MyUtil {
         Random random = new Random();
         boolean randBooleanValue = random.nextBoolean();
         int randomIntegerValue1 = random.nextInt();
-        int randomIntegerValue2 = random.nextInt(900,920); // 900-919
+        int randomIntegerValue2 = random.nextInt(900, 920); // 900-919
         double randomDoubleValue = random.nextDouble();
 
-        String randPhoneNo="";
-        for (int i = 0; i <10; i++) {
+        String randPhoneNo = "";
+        for (int i = 0; i < 10; i++) {
             randPhoneNo += random.nextInt(0, 10);
         }
 
@@ -85,6 +85,27 @@ public class MyUtil {
         System.out.println("randomIntegerValue2 (900-919): " + randomIntegerValue2);
         System.out.println("randomDoubleValue: " + randomDoubleValue);
         System.out.println("random phone no.: " + randPhoneNo);
+    }
+
+    public void testMatrix() {
+        Integer[][] array2d1 = {
+                {2, 2, 2},
+                {3, 4, 3},
+                {2, 2, 2}
+        };
+
+        Integer[][] array2d2 = {
+                {2, 2, 2},
+                {3, 6, 3},
+                {2, 2, 2}
+        };
+
+        Matrix a = new Matrix(array2d1);
+        Matrix b = new Matrix(array2d2);
+        Matrix res = new Matrix(3, 3);
+
+        res.add(a, b);
+        System.out.println("(a[1][1]+b[1][1]) = res[1][1] = "+res.getMatrixValue(1, 1));
     }
 
 }
