@@ -1,5 +1,6 @@
 package com.swarnava.java.util;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class MyUtil {
@@ -24,5 +25,25 @@ public class MyUtil {
         System.out.println("Hello, " + name);
         System.out.println("Multiplication result is = " + (a * b * c));
     }
+
+    public void testJOptionPaneClass() {
+        int dogLifeSpan = 13;
+        String name = "";
+        int age;
+        float dogYear;
+        try {
+            dogLifeSpan = 13;
+            name = JOptionPane.showInputDialog("Enter your name : ");
+            age = Integer.parseInt(JOptionPane.showInputDialog("Hello, " + name + "\n Please, Enter your age : "));
+            dogYear = (float) age / (float) dogLifeSpan;
+            JOptionPane.showMessageDialog(null,
+                    "Hello, " + name + "\n Your dog year is " + dogYear);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,
+                    "Sorry " + name + ", program failed, reason: " + e);
+        }
+    }
+
+
 
 }
