@@ -44,6 +44,27 @@ public class MyUtil {
         }
     }
 
+    public void testMathClass() {
+        int a = 20;
+        int b = -5;
+        float f = 5.2514587f;
+        double d = 5.415789658745878;
 
+        double max = Math.max(b, f);
+        int abs = Math.abs(b);
+        double sqrt = Math.sqrt(a);
+        double ceil = Math.ceil(f);
+        double round = Math.round(f);
+        double floor = Math.floor(f);
+
+        System.out.println("Result{" +
+                "max=" + max +
+                ", abs=" + abs +
+                ", sqrt=" + sqrt +
+                ", ceil=" + ceil +
+                ", round=" + round +
+                ", floor=" + floor +
+                '}');
+    }
 
 }

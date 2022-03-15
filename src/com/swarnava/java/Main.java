@@ -8,7 +8,8 @@ public class Main {
         MyUtil myUtil = new MyUtil();
         System.out.println("### This application is for practice JAVA.");
         //myUtil.testScannerClass();
-        myUtil.testJOptionPaneClass();
+        //myUtil.testJOptionPaneClass();
+        //myUtil.testMathClass();
     }
 
 }
